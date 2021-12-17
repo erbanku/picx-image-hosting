@@ -2,8 +2,6 @@ name: "monthly-auto-create-release"
 
 on:
   workflow_dispatch:
-    on:
-      push:
   schedule:
     - cron: "0 0 1 * *"
 

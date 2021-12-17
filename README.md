@@ -1,3 +1,3 @@
 # **PicX Image Hosting**
 
-Please Do Not Download~
+Personal image hosting repository, please do not download~

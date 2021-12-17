@@ -2,12 +2,14 @@ name: "monthly-auto-create-release"
 
 on:
   workflow_dispatch:
+    on:
+      push:
   schedule:
     - cron: "0 0 1 * *"
 
 jobs:
   release:
-    name: "OneDrive Apps Folder Monthly Release Job"
+    name: "Image Bend Images Release"
     runs-on: "ubuntu-latest"
 
     steps:
@@ -23,4 +25,4 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: 🎉${{ steps.date.outputs.date }}
           prerelease: false
-          title: "OneDrive Apps Folder ${{ steps.date.outputs.date}} Release"
+          title: "Image Bend Images ${{ steps.date.outputs.date}} Release"
